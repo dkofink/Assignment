@@ -1,0 +1,23 @@
+#A1
+
+file = open('xyz/PIK3CA.vcf')
+
+counter=0
+for line in file:
+    if "ENST00000263967" in line: 
+    counter +=1
+file.close()
+
+
+#A2
+from pymongo import MongoClient
+
+client = MongoClient()
+db = client.test
+cursor = db.restaurants.find()
+
+counter=0
+for document in cursor:
+    if(document....
+    counter +=1
+    
